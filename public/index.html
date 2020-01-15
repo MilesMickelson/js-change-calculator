@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Change Calculator</title>
+		<link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+  <body>
+		<div class="primary-container">
+			<div class="secondary-container"> 
+        <h1 id="main-title">Change Calculator</h1>
+        <hr>
+        <div class="row">
+					<div class="col-6">
+					  <div class="question">How much is due for the sale?</div>
+					  <input class="amount-input" id="amount-due" type="number" />
+					</div>
+					<div class="col-6">
+						<div class="question">How much has the customer given you?</div>
+						<input id="amount-received" type="number" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<button id="calculate-change" onclick="handleClickEvent()">Calculate Change</button>
+						<div class="due-output">Your total change due is:</div>
+						<div class="due-output" id="changeDue"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<div>Twenties:</div>
+						<p id="twenties-output"></p>
+						<div>Tens:</div>
+						<p id="tens-output"></p>
+						<div>Fives:</div>
+						<p id="fives-output"></p>
+						<div>Dollars:</div>
+						<p id="dollars-output"></p>
+					</div>
+					<div class="col-6">
+						<div>Quarters:</div>
+						<p id="quarters-output"></p>
+						<div>Dimes:</div>
+						<p id="dimes-output"></p>
+						<div>Nickels:</div>
+						<p id="nickels-output"></p>
+						<div>Pennies:</div>
+						<p id= "pennies-output"></p>
+					</div>
+					<!-- <p id="output"></p> -->
+				</div>
+		  </div>
+	  </div>	
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

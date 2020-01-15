@@ -6,15 +6,23 @@
     "repository": {},
     "license": "mit",
     "scripts": {
-        "start": "static -H \"{\\\"Cache-Control\\\": \\\"no-cache, must-revalidate\\\"}\"",
-        "test": "mocha --exit"
+        "start": "node server/index.js",
+        "test": "mocha --exit",
+        "sass": "node-sass ./sass/style.scss -o ./public",
+        "sass-watch": "npm run sass && node-sass ./sass/style.scss -wo ./public"
     },
     "devDependencies": {
         "axios": "^0.16.2",
         "chai": "^4.0.2",
-        "express": "^4.15.3",
+        "express": "^4.17.1",
         "mocha": "^5.2.0",
         "nightmare": "^3.0.1",
         "node-static": "^0.7.9"
+    },
+    "dependencies": {
+        "electron": "^7.1.8",
+        "morgan": "^1.9.1",
+        "node-sass": "^4.13.0",
+        "sass": "^1.24.4"
     }
 }
