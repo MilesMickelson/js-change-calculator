@@ -20,7 +20,7 @@
         "node-static": "^0.7.9"
     },
     "dependencies": {
-        "electron": "^7.1.8",
+        "electron": "^11.5.0",
         "morgan": "^1.9.1",
         "node-sass": "^4.13.0",
         "sass": "^1.24.4"
